@@ -63,3 +63,7 @@ myServer.listen(8000, () => {
 //         console.log('complete')
 //  })
 
+// fs.cpSync('./a.txt','./b.txt')
+
+fs.cp('./a.txt','./c.txt',()=>{ })
+
