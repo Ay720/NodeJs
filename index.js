@@ -1,5 +1,5 @@
 const http = require('http');
-
+const fs = require('fs')
 const myServer = http.createServer((req, res) => {
     console.log("server1");
 
@@ -29,3 +29,37 @@ const myServer = http.createServer((req, res) => {
 myServer.listen(8000, () => {
     console.log("server is running");
 });
+
+// fs.writeFileSync('./cse-c.txt',"hi we are coders in node")
+
+
+// fs.writeFile('./a.txt','abes college is',()=>{})
+
+// fs.writeFile('demo.txt', 'Hello ABES!', (err) => {
+//     if (err) {
+//         console.log("Error:", err);
+//     } else {
+//         console.log("File written successfully");
+//     }
+// });
+
+
+
+// fs.readFile('./a.txt','utf-8',(err,res)=>
+// {
+//     if(err)
+//         console.log(err)
+//     else
+//         console.log(res)
+// })
+
+// fs.appendFileSync("./a.txt",'google')
+
+
+//  fs.appendFile("./a.txt",'  ccgoogle',(err,res)=>{ 
+//     if(err)
+//         console.log(err)
+//     else
+//         console.log('complete')
+//  })
+
